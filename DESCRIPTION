@@ -1,0 +1,13 @@
+Package: nycsquirrels18
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Mine",
+           family = "Çetinkaya-Rundel",
+           role = c("aut", "cre"),
+           email = "cetinkaya.mine@gmail.com",
+           comment = c(ORCID = "0000-0001-6452-2420"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
