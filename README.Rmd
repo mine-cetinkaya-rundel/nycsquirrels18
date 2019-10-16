@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+options(width = 1000)
+```
+
+# nycsquirrels18
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of nycsquirrels18 is to make it easy for R users to use data from 
+[The Squirrel Census](https://www.thesquirrelcensus.com/). Data come from 
+[here](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw).
+
+## Installation
+
+You can install the the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("mine-cetinkaya-rundel/nycsquirrels18")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example, message=FALSE}
+library(nycsquirrels18)
+library(skimr)
+library(knitr)
+
+skim(squirrels)
+```
