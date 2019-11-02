@@ -1,5 +1,5 @@
 Package: nycsquirrels18
-Title: What the Package Does (One Line, Title Case)
+Title: NYC Squirrel Census Data Set
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Mine",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "cetinkaya.mine@gmail.com",
            comment = c(ORCID = "0000-0001-6452-2420"))
-Description: What the package does (one paragraph).
+Description: The goal of nycsquirrels18 is to make it easy for R users to use data from The Squirrel Census.
 License: CC0
 Encoding: UTF-8
 LazyData: true
