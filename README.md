@@ -24,7 +24,7 @@ devtools::install_github("mine-cetinkaya-rundel/nycsquirrels18")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Load and skim the data:
 
 ``` r
 library(nycsquirrels18)
@@ -36,7 +36,7 @@ skim(squirrels)
 #>  n obs: 3023 
 #>  n variables: 35 
 #> 
-#> ── Variable type:character ────────────────────────────────────────────────────
+#> ── Variable type:character ───────────────────────────────────────────────────────────────
 #>                                    variable missing complete    n min max empty n_unique
 #>            above_ground_sighter_measurement     114     2909 3023   1   5     0       41
 #>                                         age     121     2902 3023   1   8     0        3
@@ -52,7 +52,11 @@ skim(squirrels)
 #>                           specific_location    2547      476 3023   4 102     0      304
 #>                          unique_squirrel_id       0     3023 3023  13  14     0     3018
 #> 
-#> ── Variable type:logical ──────────────────────────────────────────────────────
+#> ── Variable type:Date ────────────────────────────────────────────────────────────────────
+#>  variable missing complete    n        min        max     median n_unique
+#>      date       0     3023 3023 2018-10-06 2018-10-20 2018-10-12       11
+#> 
+#> ── Variable type:logical ─────────────────────────────────────────────────────────────────
 #>       variable missing complete    n    mean                       count
 #>     approaches       0     3023 3023 0.059    FAL: 2845, TRU: 178, NA: 0
 #>        chasing       0     3023 3023 0.092    FAL: 2744, TRU: 279, NA: 0
@@ -68,15 +72,14 @@ skim(squirrels)
 #>     tail_flags       0     3023 3023 0.051    FAL: 2868, TRU: 155, NA: 0
 #>  tail_twitches       0     3023 3023 0.14     FAL: 2589, TRU: 434, NA: 0
 #> 
-#> ── Variable type:numeric ──────────────────────────────────────────────────────
-#>                 variable missing complete    n     mean         sd       p0      p25      p50      p75     p100     hist
-#>       borough_boundaries       0     3023 3023     4        0          4        4        4        4        4    ▁▁▁▇▁▁▁▁
-#>   city_council_districts       0     3023 3023    19.07     1.35      19       19       19       19       51    ▇▁▁▁▁▁▁▁
-#>      community_districts       0     3023 3023    19        0.23      11       19       19       19       23    ▁▁▁▁▁▇▁▁
-#>                     date       0     3023 3023 1e+07    42466.71   1e+07    1e+07    1e+07    1e+07    1e+07    ▇▃▃▇▃▁▅▂
-#>  hectare_squirrel_number       0     3023 3023     4.12     3.1        1        2        3        6       23    ▇▅▂▁▁▁▁▁
-#>                      lat       0     3023 3023    40.78     0.01      40.76    40.77    40.78    40.79    40.8  ▆▇▇▅▂▅▆▅
-#>                     long       0     3023 3023   -73.97     0.0077   -73.98   -73.97   -73.97   -73.96   -73.95 ▃▆▇▆▅▆▅▂
-#>         police_precincts       0     3023 3023    13        0.22      10       13       13       13       18    ▁▁▇▁▁▁▁▁
-#>                zip_codes    3014        9 3023 11828.22   995.98   10090    12081    12420    12423    12423    ▃▁▁▁▁▁▃▇
+#> ── Variable type:numeric ─────────────────────────────────────────────────────────────────
+#>                 variable missing complete    n     mean       sd       p0      p25      p50      p75     p100     hist
+#>       borough_boundaries       0     3023 3023     4      0          4        4        4        4        4    ▁▁▁▇▁▁▁▁
+#>   city_council_districts       0     3023 3023    19.07   1.35      19       19       19       19       51    ▇▁▁▁▁▁▁▁
+#>      community_districts       0     3023 3023    19      0.23      11       19       19       19       23    ▁▁▁▁▁▇▁▁
+#>  hectare_squirrel_number       0     3023 3023     4.12   3.1        1        2        3        6       23    ▇▅▂▁▁▁▁▁
+#>                      lat       0     3023 3023    40.78   0.01      40.76    40.77    40.78    40.79    40.8  ▆▇▇▅▂▅▆▅
+#>                     long       0     3023 3023   -73.97   0.0077   -73.98   -73.97   -73.97   -73.96   -73.95 ▃▆▇▆▅▆▅▂
+#>         police_precincts       0     3023 3023    13      0.22      10       13       13       13       18    ▁▁▇▁▁▁▁▁
+#>                zip_codes    3014        9 3023 11828.22 995.98   10090    12081    12420    12423    12423    ▃▁▁▁▁▁▃▇
 ```

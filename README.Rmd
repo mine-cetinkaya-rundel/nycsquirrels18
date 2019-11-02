@@ -33,7 +33,7 @@ devtools::install_github("mine-cetinkaya-rundel/nycsquirrels18")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Load and skim the data:
 
 ```{r example, message=FALSE}
 library(nycsquirrels18)
