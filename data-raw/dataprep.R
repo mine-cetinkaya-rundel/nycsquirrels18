@@ -20,7 +20,7 @@ squirrels <- read_csv(here::here("data-raw", "2018_Central_Park_Squirrel_Census_
       substr(date, 5, 8),
       sep="/"
     ) %>%
-    as.Date(format='%m/%d/%Y')
+      as.Date(format='%m/%d/%Y')
   )
 
 # save data --------------------------------------------------------------------
