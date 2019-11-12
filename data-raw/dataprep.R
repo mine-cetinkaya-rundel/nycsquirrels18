@@ -13,13 +13,13 @@ squirrels <- read_csv(here::here("data-raw", "2018_Central_Park_Squirrel_Census_
     lat = y
   ) %>%
   mutate(date = as.character(date)) %>%
-    mutate(
-      date = paste(
-        substr(date, 1, 2),
-        substr(date, 3, 4),
-        substr(date, 5, 8),
-        sep="/"
-      ) %>%
+  mutate(
+    date = paste(
+      substr(date, 1, 2),
+      substr(date, 3, 4),
+      substr(date, 5, 8),
+      sep="/"
+    ) %>%
     as.Date(format='%m/%d/%Y')
   )
 
